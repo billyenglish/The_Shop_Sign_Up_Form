@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +13,10 @@ body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     max-width: 100%;
+    background-image: url("../images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Main Section */
@@ -21,24 +25,44 @@ main {
     display: flex;
     justify-content: center;
     max-width: inherit;
-    height: 58rem;
-    border: 1px solid #000;
+    min-height: 100vh;
 }
 
+/* Hero Section */
+
 .hero-section {
-    outline: 1px solid red;
     min-width: 50%;
 }
+
+/* Sign Up Form */
 
 .signup-form {
     min-width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    opacity: .85;
+    color: #FFF;
+}
+
+h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-top: 6rem;
+    width: 50%;
+    justify-content: center;
 }
 
 form {
-    margin-top: 18rem;
+    margin-top: 8rem;
 }
 
 form > div {
@@ -46,9 +70,12 @@ form > div {
 }
 
 input {
+    min-height: 2rem;
     min-width: 14rem;
     border: none;
     border-bottom: .1rem solid #000;
+    font-size: 1.1rem;
+    padding-left: .25rem;
 }
 
 input::placeholder {
@@ -62,13 +89,13 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: .1rem;
 }
 
 button {
     font-size: 1rem;
     margin-top: 3rem;
     padding: .25rem;
-    letter-spacing: .1rem;
     font-weight: 500;
 }
 
