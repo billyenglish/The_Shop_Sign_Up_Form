@@ -8,35 +8,61 @@
 </head>
 <body>
     <main>
-        <form>
-            <div>
-                <label for="first_name"></label>
-                <input type="text" name="first_name" id="first_name" placeholder="First Name">
-            </div>
-            <div>
-                <label for="last_name"></label>
-                <input type="text" name="last_name" id="last_name" placeholder="Last Name">
-            </div>
-            <div>
-                <label for="user_email"></label>
-                <input type="email" name="user_email" id="user_email" placeholder="Email">
-            </div>
-            <div>
-                <label for="user_phone_number"></label>
-                <input type="tel" name="user_phone_number" id="user_phone_number" placeholder="Phone Number">
-            </div>
-            <div>
-                <label for="user_password"></label>
-                <input type="password" name="user_password" id="user_password" placeholder="Password">
-            </div>
-            <div>
-                <label for="confirm_password"></label>
-                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+        <section class="hero-section">
+            <h1>Logo</h1>
+        </section>
+        <section class="form-section">
+
+            <div class="main-header">
+                <img src="./images/The_Shop.jpg" alt="">
+                <h2>The Shop</h2>
             </div>
 
-            <button type="submit" id="create-account">Create Account</button>
-        </form>
+            <form>
+                <div>
+                    <label for="first_name"></label>
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name">
+                    <span class="error-modal first-name">First Name.</span>
+                </div>
+                <div>
+                    <label for="last_name"></label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+                    <span class="error-modal last-name">Last Name.</span>
+                </div>
+                <div>
+                    <label for="user_email"></label>
+                    <input type="email" name="user_email" id="user_email" placeholder="Email">
+                    <span class="error-modal user-email">Invalid Email</span>
+                </div>
+                <div>
+                    <label for="user_phone_number"></label>
+                    <input type="tel" name="user_phone_number" id="user_phone_number" placeholder="Phone Number">
+                    <span class="error-modal phone-number">Invalid Phone</span>
+                </div>
+                <div>
+                    <label for="user_password"></label>
+                    <input type="password" name="user_password" id="user_password" placeholder="Password">
+                    <span class="error-modal user-password">Password</span>
+                </div>
+                <div>
+                    <label for="confirm_password"></label>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+                    <span class="error-modal confirm-password">Confirm Password</span>
+                </div>
+
+                <div class="create-account">
+                    <button type="submit" id="create-account">Create Account</button>
+                </div>
+
+                <p class="existing-account">Already have an Account?</span></p>
+
+                <p class="sign-in">Already Have Account <span class="sign-in-account"><a href="#">Sign In</a></span></p>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
