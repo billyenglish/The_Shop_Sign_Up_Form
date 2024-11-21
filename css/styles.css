@@ -7,3 +7,121 @@
     font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
+/* Body Section */
+
+/* Main Section */
+
+main {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+/* Hero Section */
+
+.hero-section {
+    outline: .1rem solid #000;
+    min-height: 95vh;
+    min-width: 50%;
+}
+
+.hero-logo img {
+    display: flex;
+    height: 35rem;
+    width: 35rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    mix-blend-mode: multiply;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    margin-top: 2rem;
+}
+
+.main-header img {
+    mix-blend-mode: multiply;
+    height: 10rem;
+    width: 10rem;
+}
+
+.main-header h2 {
+    font-size: 2rem;
+    font-weight: 450;
+}
+
+/* Form Section */
+
+.form-section {
+    outline: .1rem solid #000;
+    min-height: 95vh;
+    min-width: 50%;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+}
+
+input {
+    font-size: 1.25rem;
+    height: 2.5rem;
+    min-width: 14rem;
+    border: none;
+    border-bottom: .1rem solid #000;
+}
+
+input::placeholder {
+    color: #000;
+    font-size: 1.25rem;
+}
+
+.error-modal {
+    display: none;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+/* Create Account Button */
+
+.create-account {
+    margin: 3rem 0 3rem 0;
+}
+
+#create-account {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .25rem;
+}
+
+#create-account:hover {
+    cursor: pointer;
+}
+
+.sign-in {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: .25rem;
+}
+
+.existing-account {
+    font-size: .9rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sign-in-account a {
+    color: blue;
+    text-decoration: none;
+}
