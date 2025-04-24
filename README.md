@@ -19,7 +19,7 @@ Welcome to **The Shop**! This repository contains the code for a simple **Sign U
 ## 🌐 Live Demo
 
 You can try out the **Sign Up Form** live here:  
-[**The Shop Sign Up Form - Live Demo**](https://yourdemo-link.com) *(Replace with your actual live demo URL)*
+[**The Shop Sign Up Form - Live Demo**](https://billyenglish.github.io/The_Shop_Sign_Up_Form/)
 
 ## 🛠️ Technologies Used
 
@@ -36,4 +36,4 @@ Follow these steps to get **The Shop** Sign Up Form up and running on your local
 Clone the repository using the following command:
 
 ```bash
-git clone https://github.com/yourusername/the-shop.git
+git clone https://github.com/billyenglish/the-shop.git
