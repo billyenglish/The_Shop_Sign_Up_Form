@@ -1,4 +1,4 @@
-# <img src="/images/The_Shop.jpg" height="30" width="30"> **The Shop** - Sign Up Form
+# <img src="/images/The_Shop.jpg" height="40" width="40"> **The Shop** - Sign Up Form
 
 Welcome to **The Shop**! This repository contains the code for a simple **Sign Up Form** built using **HTML**, **CSS**, and **JavaScript**. The form allows users to register for **The Shop** by providing basic information like their name, email, and password.
 
