@@ -1,30 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Matangi:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-section: calc(100vh - var(--footer-section));
+    --footer-section: 4rem;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
 }
 
 /* Body Section */
 
 body {
-    
+    border: 1px solid #000;
+    font-size: 62.5%;
+    font-family: Karla;
+}
+
+/* Container Section */
+
+.container {
+    border: 1px solid #000;
+    display: grid;
+    grid-template-areas:
+        "main main main main"
+        "footer footer footer footer";
 }
 
 /* Main Section */
 
 main {
+    height: var(--main-section);
+    grid-area: main;
     display: flex;
-    justify-content: center;
-    min-width: 100%;
+}
+
+section {
+    width: 50%;
 }
 
 /* Hero Section */
 
-.hero-section {
-    min-height: 95vh;
+.hero_section {
     min-width: 50%;
     background-color: #FFF;
     opacity: .65;
@@ -34,148 +60,146 @@ main {
     background-position: center;
 }
 
-.hero-section h1 {
-    font-size: 2rem;
-    font-weight: 450;
-    font-stretch: extra-expanded;
-    padding: 1rem 0 0 1rem;
-}
-
-.trademark {
-    font-size: 1.5rem;
-}
-
-.hero-logo img {
-    display: flex;
-    height: 35rem;
-    width: 35rem;
-    margin: 0 auto;
-    margin-top: 6rem;
-    mix-blend-mode: multiply;
-    position: sticky;
-    z-index: 3;
-}
-
-.main-header {
+.header_section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50%;
-    margin-top: 2rem;
+    width: 100%;
+    padding: 1.25rem 0 0 0;
 }
 
-.main-header img {
+.section_title {
+    font-family: 'Karla';
+    font-size: 1.75rem;
+    font-weight: 600;
+    filter: brightness(10%);
+    position: relative;
+    z-index: 5;
+}
+
+.shop_logo_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.the_shop_creative {
     mix-blend-mode: multiply;
-    height: 10rem;
-    width: 10rem;
-    background-color: #FFF;
+    height: 20rem;
+    width: 20rem;
+    filter: blur(1px) brightness(100%);
+    position: relative;
+    z-index: 5;
 }
 
-.main-header h2 {
-    font-size: 2rem;
-    font-weight: 450;
-}
+/* User Form Section */
 
-/* Form Section */
-
-.form-section {
-    min-height: 95vh;
-    min-width: 50%;
-}
-
-form {
-    margin-top: 2rem;
-}
-
-form div {
+.user_form_section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+}
+
+.form_title {
+    font-size: 1.25rem;
+    font-weight: 400;
+ }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: .5rem;
+    margin: 7rem 0 0 0;
 }
 
 input {
-    font-size: 1.25rem;
-    height: 2.5rem;
-    min-width: 14rem;
+    height: 2rem;
+    width: 14rem;
     border: none;
-    border-bottom: .1rem solid #000;
-    padding: .25rem;
+    border-bottom: 1px solid #000;
 }
 
 input:focus {
-    background-color: beige;
+    border: none;
     outline: none;
 }
 
 input::placeholder {
     color: #000;
-    font-size: 1.25rem;
-}
-
-.error-modal {
-    display: none;
-    font-size: .75rem;
-    font-weight: 500;
-    border: 1px solid #000;
-    color: #FFF;
-    background-color: #000;
-    opacity: .9;
-    position: absolute;
-    margin-top: .1rem;
-    padding: .25rem;
-}
-
-/* Create Account Button */
-
-.create-account {
-    margin: 3rem 0 3rem 0;
-}
-
-#create-account {
+    font-family: Karla;
     font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.user_error {
+    font-size: .8rem;
+    font-weight: 400;
+    padding-top: .25rem;
+    color: red;
+    visibility: hidden;
+}
+
+.form_title {
+    display: flex;
+    font-size: 1.75rem;
+    font-family: 'Open Sans';
     font-weight: 500;
-    padding: .25rem;
-    border-radius: .25rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.form_icon {
+    height: 8rem;
+    width: 8rem;
+}
+
+.control_panel {
+    padding: 1.5rem 0;
+}
+
+.already_account {
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.create_account_button {
+    font-family: Karla;
+    font-size: 1.1rem;
+    padding: .3rem .4rem;
+    box-shadow: 5px 5px 5px #000;
     background-color: #000;
     color: #FFF;
-    box-shadow: .5rem .5rem .5rem #000;
+    border-radius: .25rem;
 }
 
-#create-account:hover {
+button:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    transition: 2s ease-in-out;
 }
 
-.sign-in {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: .25rem;
-}
-
-.existing-account {
-    font-size: .9rem;
-    font-style: italic;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.sign-in-account a {
-    color: blue;
+.already_account a {
     text-decoration: none;
 }
 
 /* Footer Section */
 
 footer {
-    background-color: #000;
-    color: #FFF;
+    border: 1px solid #000;
+    grid-area: footer;
+    height: var(--footer-section);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 5vh;
-    opacity: .85;
-    min-width: 100%;
+    justify-content: center;
+    gap: .25rem;
+    background-color: #000;
+}
+
+footer p {
+    color: #FFF;
+    font-size: .9rem;
+    font-weight: 400;
 }
