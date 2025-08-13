@@ -5,69 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Shop</title>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
-    <link rel="icon" href="./images/The_Shop.jpg" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <section class="hero-section">
-            <h1>The Shop<sub class="trademark">&reg;</sub></h1>
+    <div class="container">
+        <main class="main_section">
+            <section class="hero_section">
+                <header class="header_section">
+                    <h1 class="section_title">The Shop Creative <sub>&reg;</sub></h1>
+                </header>
 
-            <div class="hero-logo">
-                <img src="./images/The_Shop.jpg" alt="The Shop Logo">
-            </div>
-        </section>
-        <section class="form-section">
+                <article class="shop_logo_article">
+                    <h2 class="shop_logo">
+                        <img
+                            src="./images/The_Shop.jpg" 
+                            alt="The Shop Creative"
+                            class="the_shop_creative"
+                        >
+                    </h2>
+                </article>
+            </section>
+            <section class="user_form_section">
+                    
+                <h2 class="form_title"><img src="./images/The_Shop.jpg" alt="" class="form_icon"> The Shop</h2>
 
-            <div class="main-header">
-                <img src="./images/The_Shop.jpg" alt="The Shop Logo">
-                <h2>The Shop</h2>
-            </div>
+                <form>
+                    <div>
+                        <input type="text" name="first_name" id="first_name" placeholder="First Name">
+                        <p class="title_name user_error">First Name</p>
+                    </div>
+                    <div>
+                        <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+                        <p class="title_name user_error">First Name</p>
+                    </div>
+                    <div>
+                        <input type="email" name="user_email" id="user_email" placeholder="Email">
+                        <p class="title_name user_error">First Name</p>
+                    </div>
+                    <div>
+                        <input type="tel" name="user_phone" id="user_phone" placeholder="Phone">
+                        <p class="title_name user_error">First Name</p>
+                    </div>
+                    <div>
+                        <input type="password" name="user_password" id="user_password" placeholder="Password">
+                        <p class="title_name user_error">First Name</p>
+                    </div>
+                    <div>
+                        <input type="password" name="confirm_user_password" id="confirm_user_password" placeholder="Confirm Password">
+                        <p class="title_name user_error">First Name</p>
+                    </div>
+                    <div class="control_panel">
+                        <button type="button" class="create_account_button" id="create_account_button">Create Account</button>
+                    </div>
+                </form>
 
-            <form>
-                <div>
-                    <label for="first_name"></label>
-                    <input type="text" name="first_name" id="first_name" placeholder="First Name">
-                    <span class="error-modal first-name">First Name.</span>
-                </div>
-                <div>
-                    <label for="last_name"></label>
-                    <input type="text" name="last_name" id="last_name" placeholder="Last Name">
-                    <span class="error-modal last-name">Last Name.</span>
-                </div>
-                <div>
-                    <label for="user_email"></label>
-                    <input type="email" name="user_email" id="user_email" placeholder="Email">
-                    <span class="error-modal user-email">Invalid Email</span>
-                </div>
-                <div>
-                    <label for="user_phone_number"></label>
-                    <input type="tel" name="user_phone_number" id="user_phone_number" placeholder="Phone Number">
-                    <span class="error-modal phone-number">Invalid Phone</span>
-                </div>
-                <div>
-                    <label for="user_password"></label>
-                    <input type="password" name="user_password" id="user_password" placeholder="Password">
-                    <span class="error-modal user-password">Password</span>
-                </div>
-                <div>
-                    <label for="confirm_password"></label>
-                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
-                    <span class="error-modal confirm-password">Confirm Password</span>
-                </div>
-
-                <div class="create-account">
-                    <button type="submit" id="create-account">Create Account</button>
-                </div>
-
-                <p class="existing-account">Already have an Account?</span></p>
-
-                <p class="sign-in">Already Have Account <span class="sign-in-account"><a href="#">Sign In</a></span></p>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright &copy; The Shop By Billy English</p>
-    </footer>
+                <p class="already_account">Already have an Account? <a href="#">Sign In</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>Your one-stop destination for quality goods & unique finds. Shop smart, live stylish.</p>
+            <p>© 2025 The Shop. All rights reserved.</p>
+        </footer>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
